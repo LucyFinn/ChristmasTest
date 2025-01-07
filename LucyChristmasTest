@@ -1,0 +1,20 @@
+#q16a hl
+#Enter name: Lucy
+
+print("Welcome to my BMI calculator!")
+#read weight (i)
+weight = int(input("Enter weight (in kilograms): "))
+height = int(input("Enter height (in cnetimetres): ")) #(ii)
+    
+bmi = weight / (pow(height,2)) * 10000 #(iv)
+n = 1
+print("BMI is: ", round(bmi,n)) #(iii)
+#(vi)
+if bmi < 18.5:
+    print("Underweight")
+elif bmi >= 18.5 and bmi <= 24.9:
+    print("Normal")
+elif bmi >= 25 and bmi <= 29.9:
+    print("Overweight")
+else:
+    print("Obese")
