@@ -1,0 +1,24 @@
+#16b HL
+#Enter name:Lucy
+
+from random import *
+num = int(input("Enter the number of pairs of values you wish to generate: ")) #(ii)
+#(i)
+heights = [num] #an empty list of heights
+weights = [num] #an empty list of weights
+#BMI = [num] #(iii)
+
+#Loop to build up the lists with random values
+for count in range(num):
+    # a random integer between 150 and 210
+    heights.append(randint(150, 210))
+    # a random integer between 50 and 130
+    weights.append(randint(50, 130))
+    #bmi = weights / (heights*heights) * 10000 #(iii)
+
+
+# Display the lists
+#(i)
+print("Heights:",heights) #(i)
+print("Weights:",weights) #(i)
+#print("BMI values:",BMI) #(iii)
