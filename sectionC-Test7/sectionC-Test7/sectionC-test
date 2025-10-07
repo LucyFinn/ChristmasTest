@@ -1,0 +1,74 @@
+#Section C Exam Paper Question
+#Question_16_A_HL
+#Enter your name here: Lucy 
+
+s = 0
+
+sentence = input("Please enter a sentence: ")
+#(i) - making an s counter - start
+sCount = sentence.count("s")
+SCount = sentence.count("S")
+total = sCount + SCount
+print("The number of s's was:", total)
+#(i) - end
+
+#(ii) - start
+print("Your sentence was:", sentence)
+lowerCase = sentence.lower()
+print("Your lowercase sentence is:", lowerCase)
+#(ii) - counting the vowels 
+vowels = 0
+for x in sentence:
+    if x == "a":
+        vowels+=1
+    elif x == "e":
+        vowels+=1
+    elif x == "i":
+        vowels+=1
+    elif x == "o":
+        vowels+=1
+    elif x == "u":
+        vowels+=1
+print("The number of vowels was:", vowels)
+#(ii) - end
+
+#(iii) - start
+letters = 0
+numbers = 0
+for i in sentence:
+    if i == '1':
+        numbers+=1
+    elif i == '2':
+        numbers+=1
+    elif i == '3':
+        numbers+=1
+    elif i == '4':
+        numbers+=1
+    elif i == '5':
+        numbers+=1
+    elif i == '6':
+        numbers+=1
+    elif i == '7':
+        numbers+=1
+    elif i == '8':
+        numbers+=1
+    elif i == '9':
+        numbers+=1
+    elif i == '0':
+        numbers+=1
+    elif i == " ":
+        letters+=0
+    else:
+        letters+=1
+print("The number of digits was:", numbers)
+print("The number of letters was:", letters)
+#(iii) - end
+
+#(iv) - start
+spaces = 0
+for i in sentence:
+    if i  == " ":
+        spaces+=1
+words = spaces + 1
+print("The number of words was:", words)
+#(iv) - end 
