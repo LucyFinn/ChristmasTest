@@ -1,0 +1,37 @@
+#Question_16_B_HL
+#Enter your name here:Lucy
+
+import random
+print("Welcome to my shop")
+total = 0
+item_list = []
+item_prices = []
+
+#(i) - start
+shopping = input("Please enter the item: ")
+while shopping != "Stop":
+    #shopping = input("Please enter the item: ")
+    item_list.append(shopping)
+    cost = float(input("Please enter the price of the item: "))
+    total = total + cost
+    print("The current total is €",total)
+    item_prices.append(cost)
+    shopping = input("Please enter the item: ")
+else:
+    print("Your items are:", item_list)
+    print("the prices are:", item_prices)
+    print("Grand total €",total)
+#(i) - end
+    
+#(ii) - start - getting a random item from the list
+
+print("Your random item to be checked is:")
+#(ii) - end
+
+    
+#(iii) - start - most expensive and the cheapest
+cheap = min(item_prices)
+expensive = max(item_prices)
+print("The most expensive item is:", expensive)
+print("The cheapest item is:", cheap )
+#(iii) - end 
