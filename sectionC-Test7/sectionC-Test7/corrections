@@ -1,0 +1,8 @@
+from random import randint
+myList = ['apple', 'pear', 'cherry', 'orange', 'kiwi']
+length = len(myList)
+print(length)
+
+random = randint(1, length)
+
+print("The random number is:", random)
