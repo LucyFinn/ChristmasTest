@@ -1,8 +1,88 @@
-from random import randint
-myList = ['apple', 'pear', 'cherry', 'orange', 'kiwi']
-length = len(myList)
-print(length)
+#Section C Exam Paper Question
+#Question_16_A_HL
+#Enter your name here: Lucy 
 
-random = randint(1, length)
+s = 0
 
-print("The random number is:", random)
+sentence = input("Please enter a sentence: ")
+#(i) - making an s counter - start
+sCount = sentence.count("s")
+SCount = sentence.count("S")
+total = sCount + SCount
+print("The number of s's was:", total)
+#(i) - end
+
+#(ii) - start
+print("Your sentence was:", sentence)
+lowerCase = sentence.lower()
+print("Your lowercase sentence is:", lowerCase)
+#(ii) - counting the vowels 
+vowels = 0
+for x in sentence:
+    if x == "a":
+        vowels+=1
+    elif x == "e":
+        vowels+=1
+    elif x == "i":
+        vowels+=1
+    elif x == "o":
+        vowels+=1
+    elif x == "u":
+        vowels+=1
+print("The number of vowels was:", vowels)
+#(ii) - end
+
+#(iii) - start
+letters = 0
+numbers = 0
+
+
+#(iii) - end
+
+#(iv) - start
+spaces = 0
+for i in sentence:
+    if i  == " ":
+        spaces+=1
+words = spaces + 1
+print("The number of words was:", words)
+#(iv) - end 
+
+#Question_16_B_HL
+#Enter your name here:Lucy
+
+from random import randint 
+print("Welcome to my shop")
+total = 0
+item_list = []
+item_prices = []
+
+#(i) - start
+shopping = input("Please enter the item: ")
+while shopping != "Stop":
+    #shopping = input("Please enter the item: ")
+    item_list.append(shopping)
+    cost = float(input("Please enter the price of the item: "))
+    total = total + cost
+    print("The current total is €",total)
+    item_prices.append(cost)
+    shopping = input("Please enter the item: ")
+else:
+    print("Your items are:", item_list)
+    print("the prices are:", item_prices)
+    print("Grand total €",total)
+#(i) - end
+    
+#(ii) - start - getting a random item from the list
+lengthList = len(item_list)
+random = randint(1, lengthList)
+randomItem = item_list[random]
+print("Your random item to be checked is:", randomItem)
+#(ii) - end
+
+    
+#(iii) - start - most expensive and the cheapest
+
+print("The most expensive item is:")
+print("The cheapest item is:")
+#(iii) - end 
