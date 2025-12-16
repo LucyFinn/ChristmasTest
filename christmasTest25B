@@ -17,6 +17,7 @@ result = []
 def lotto(ticket):
     for times in range(3):
         draw = drum[random.randint(0,len(drum))-1]
+        drum.remove(draw) #(iii)
         result.append(draw)
     print("The draw was: ",result)
 #(ii) - Start
