@@ -1,0 +1,23 @@
+#Question16_B_HL
+#Enter your name here: Lucy Finn
+
+#(i)created 2 empty lists called positve and negative
+postive_reviews = []
+negative_reviews = []
+rate = input("Please enter a rating from 1 - 5: " )
+
+while rate != "done":
+    rate = int(input("Please enter a rating from 1 - 5: " ))
+    
+if rate < 3:
+    negative_reviews.append(rate)
+elif rate > 3:
+    postive_reviews.append(rate)
+print("The negative reviews are:", negative_reviews)
+print("The positive reviews are:", postive_reviews)
+
+#(ii)
+if len(negative_reviews) > len(postive_reviews):
+    print("User satisfaction is low")
+elif len(negative_reviews) < len(postive_reviews):
+    print("User satisfaction is high")
