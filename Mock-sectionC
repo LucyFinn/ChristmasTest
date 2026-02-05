@@ -1,0 +1,47 @@
+#Question16_A_HL
+#Enter your name here: Lucy Finn
+
+print("Welcome to my feedback tracker")
+print("Enter -1 to stop")
+ratings = []
+
+
+#(i)Asking the user to input a rating and then appending this rating to the empty list
+# for i in range(5):
+rate = int(input("Please enter a rating from 1 - 5: "))
+ratings.append(rate)
+
+#(v)I tried to make it so the user can enter as many ratings as the want and it stops once they enter -1
+while rate != -1:
+    print("Enter -1 to stop")
+    rate = int(input("Please enter a rating from 1 - 5: "))
+    ratings.append(rate)
+    
+
+else:
+    print("The list of ratings is:", ratings)
+    
+    #(ii)Getting the average of the ratings list
+    average = sum(ratings) / len(ratings)
+    round(average,2)
+    print("The average rating was:", average)
+    
+    #(iv)If a number outside the range is detected then that number is removed from the list
+    #(v)Making the invalid list 
+    for i in (ratings):
+        if i < 1 or i > 5:
+            ratings.remove(rate)
+        print("The list of ratings is:", ratings)
+
+    
+
+#(iii)Displaying the number of 5 star reviews without using any list methods
+    count = 0
+    for i in (ratings):
+        if i == 5:
+            count += 1
+    print("The number of 5-star ratings was:", count)
+
+    #(v)ordering the list from highets to lowest
+    ratings.sort()
+    print("The ratings list sorted from largest to smallest is:", ratings)
